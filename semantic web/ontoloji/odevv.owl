@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Bilimkurgu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kitap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yayınevi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yazar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#İnsan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aksiyon/Macera"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#yayınlar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#yazar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kitapAdi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kitapID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kitapTuru"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yayineviAdi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yazarAdi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yazarID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yazarSoyadi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kitap1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kitap2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yayinevi1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yazar1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yazar2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bilimkurgu"/>
+        <Class IRI="#Kitap"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yayınevi"/>
+        <Class IRI="#İnsan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yazar"/>
+        <Class IRI="#İnsan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aksiyon/Macera"/>
+        <Class IRI="#Kitap"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Bilimkurgu"/>
+        <Class IRI="#Yayınevi"/>
+        <Class IRI="#Yazar"/>
+        <Class IRI="#Aksiyon/Macera"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Kitap"/>
+        <NamedIndividual IRI="#kitap1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kitap"/>
+        <NamedIndividual IRI="#kitap2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yayınevi"/>
+        <NamedIndividual IRI="#yayinevi1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yazar"/>
+        <NamedIndividual IRI="#yazar1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yazar"/>
+        <NamedIndividual IRI="#yazar2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#yayınlar"/>
+        <NamedIndividual IRI="#yayinevi1"/>
+        <NamedIndividual IRI="#kitap1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#yayınlar"/>
+        <NamedIndividual IRI="#yayinevi1"/>
+        <NamedIndividual IRI="#kitap2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#yazar"/>
+        <NamedIndividual IRI="#yazar1"/>
+        <NamedIndividual IRI="#kitap1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#yazar"/>
+        <NamedIndividual IRI="#yazar2"/>
+        <NamedIndividual IRI="#kitap2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kitapAdi"/>
+        <NamedIndividual IRI="#kitap1"/>
+        <Literal>Dune</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kitapID"/>
+        <NamedIndividual IRI="#kitap1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kitapTuru"/>
+        <NamedIndividual IRI="#kitap1"/>
+        <Literal>Bilimkurgu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kitapAdi"/>
+        <NamedIndividual IRI="#kitap2"/>
+        <Literal>Da Vinci Şifresi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kitapID"/>
+        <NamedIndividual IRI="#kitap2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kitapTuru"/>
+        <NamedIndividual IRI="#kitap2"/>
+        <Literal>Aksiyon/Macera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yayineviAdi"/>
+        <NamedIndividual IRI="#yayinevi1"/>
+        <Literal>yayınEvi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yazarAdi"/>
+        <NamedIndividual IRI="#yazar1"/>
+        <Literal>Frank</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yazarID"/>
+        <NamedIndividual IRI="#yazar1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yazarSoyadi"/>
+        <NamedIndividual IRI="#yazar1"/>
+        <Literal>Herbert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yazarAdi"/>
+        <NamedIndividual IRI="#yazar2"/>
+        <Literal>Dan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yazarID"/>
+        <NamedIndividual IRI="#yazar2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yazarSoyadi"/>
+        <NamedIndividual IRI="#yazar2"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#yayınlar"/>
+        <Class IRI="#Yayınevi"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#yazar"/>
+        <Class IRI="#Yazar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#yayınlar"/>
+        <Class IRI="#Kitap"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#yazar"/>
+        <Class IRI="#Kitap"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kitapAdi"/>
+        <Class IRI="#Kitap"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kitapID"/>
+        <Class IRI="#Kitap"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kitapTuru"/>
+        <Class IRI="#Kitap"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yayineviAdi"/>
+        <Class IRI="#Yayınevi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yazarAdi"/>
+        <Class IRI="#Yazar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yazarID"/>
+        <Class IRI="#Yazar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yazarSoyadi"/>
+        <Class IRI="#Yazar"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#kitapAdi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kitapID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kitapTuru"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yayineviAdi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yazarAdi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yazarID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yazarSoyadi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

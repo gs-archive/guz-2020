@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#"
+     xml:base="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:semantic-odev="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yayınlar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yayınlar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yayınevi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitapAdi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitapAdi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitapID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitapID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitapTuru -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitapTuru">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yayineviAdi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yayineviAdi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yayınevi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazarAdi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazarAdi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazarID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazarID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazarSoyadi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazarSoyadi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Bilimkurgu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Bilimkurgu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yayınevi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yayınevi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#İnsan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#İnsan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#İnsan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#İnsan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Aksiyon/Macera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Aksiyon/Macera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+        <kitapAdi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dune</kitapAdi>
+        <kitapID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10000</kitapID>
+        <kitapTuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilimkurgu</kitapTuru>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Kitap"/>
+        <kitapAdi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Da Vinci Şifresi</kitapAdi>
+        <kitapID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10001</kitapID>
+        <kitapTuru rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aksiyon/Macera</kitapTuru>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yayinevi1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yayinevi1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yayınevi"/>
+        <yayınlar rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap1"/>
+        <yayınlar rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap2"/>
+        <yayineviAdi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yayınEvi</yayineviAdi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazar1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazar1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+        <yazar rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap1"/>
+        <yazarAdi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank</yazarAdi>
+        <yazarID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0001</yazarID>
+        <yazarSoyadi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herbert</yazarSoyadi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazar2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#yazar2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+        <yazar rdf:resource="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#kitap2"/>
+        <yazarAdi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dan</yazarAdi>
+        <yazarID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0002</yazarID>
+        <yazarSoyadi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown</yazarSoyadi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Bilimkurgu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yayınevi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Yazar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gulsa/ontologies/2021/0/semantic-odev#Aksiyon/Macera"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
